@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root{
+    --main-font: 'Montserrat', sans-serif;
+
+}
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+.thongtintrang{
+  padding: 10px;
+ 
+}
+.content{
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    height: 700px;   
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.content_left{
+    width: 30%;
+    height: 80%;
+   
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.imagesp{
+    /* width: 70%;
+    height: 70%;
+    transition: width 2s;
+    display: inline-block;
+    margin-left: 13%; */
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ kích thước của khung */
+    height: auto; /* Duy trì tỷ lệ khung hình */
+    border: 2px solid #333; /* Đổi màu và độ rộng viền */
+    border-radius: 8px; /* Làm mịn góc viền */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ cho khung ảnh */
+    object-fit: cover; /* Đảm bảo ảnh sẽ hiển thị đúng tỷ lệ */
+
+
+    
+   
+   
+}
+.imagesp {
+    transition:  all 0.3s ease;
+   
+ }
+ 
+
+.click{
+    width: 49.5%;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;;
+}
+.iconn{
+    display: inline-flex;
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+    color: white;
+    background-color: #1877F2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+   
+    
+}
+.click.themgh:active{
+    background-color: #1877F2;
+}
+
+#chitietsp td{
+    font-size: 19px;
+   
+    padding-bottom: 20px;
+}
+.container2{
+    width: 1168px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid;
+   
+}
+.container2>.container3-strip{
+    width: 100%;
+    height: 50px;
+  
+}
+#tab1{
+    display: block;
+
+}
+#tab2{
+    display: none;
+}
+
+
+.container3-strip>ul>li{
+    width: 190px;
+    height: 100%;   
+    
+    text-align: center;
+    font-size: 18px;
+}
+.container3-strip>ul>li a{
+    padding-top: 15px;
+    color: rgb(13, 13, 14);
+    font-size: 19px;
+    font-weight: bold;
+}
+#tab1>table>tbody>tr>td{
+    font-size: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 0px;
+    border-bottom: 1px solid black;
+   
+
+
+}
+
+.kengang2{
+    width: 900px;
+    height: 3px;
+    background-color: #796752;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: -188px;
+    
+}
+.kengang2 .title3{
+    width: 40%;
+    font-size: 26px;
+    position: relative;  
+    bottom:13px;
+    left: 24%;
+    background-color: white;
+    text-transform: uppercase;
+    padding:0 10px 0;
+    text-align: center;
+    font-weight: bold;
+
+}
+.containersp10 {
+    margin: 133px ;
+    margin-top: 20px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .containersp10 .boxsp10 {
+    width: 23%;
+    padding: 10px; /* Thêm padding để tạo khoảng cách */
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .containersp10 .boxsp10 img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    pointer-events: none; /* Ngăn chặn hiệu ứng hover trên ảnh */
+  }
+  
+  .containersp10 .boxsp10 .titlettsp {
+    font-size: 18px;
+    text-decoration: none;
+    color: #800080;
+    font-weight: bold;
+    overflow: hidden; /* Ngăn chặn tràn ra ngoài */
+    text-overflow: ellipsis; /* Hiển thị dấu chấm cuối nếu tên quá dài */
+    white-space: nowrap; /* Đảm bảo tên không bị ngắt dòng */
+  }
+  
+  .containersp10 .boxsp10 .titlettsp:hover {
+    color: #f50;
+  }
+  
+  .containersp10 .boxsp10 .giattsp {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 12px;
+  }
+  
+  .giattsp .gia {
+    color: #8bc9e2;
+    font-size: 17px;
+    display: inline;
+    font-weight: 700;
+  }
+  
+  .giattsp .giacu {
+    color: rgb(54, 52, 52);
+    font-size: 13px;
+    display: inline;
+    text-decoration: line-through;
+  }
+  
+  .giattsp > span {
+    display: inline-block;
+    background-color: red;
+    color: #faf2f2;
+    border-radius: 5px;
+    width: 40px;
+    height: 18px;
+    padding-top: 2px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  
+.sanpham{
+    width: 1200px;
+    height: 50px;   
+    margin: auto;
+    font-size: 29px;
+    position: relative;
+    padding-left: 3px;
+    font-weight: bold;
+    margin-top: 40px;
+    
+}
+.sanpham div{
+    background-color: #484847;
+    width: 82.9%;
+    position: absolute;
+    height: 3px;
+    left: 16.8%;
+    top:16px
+}
+
+.container3-strip>ul>li>a{
+    width: 100%;
+    height: 100%;
+}
+.active{
+    display: block;
+    background-color:darkgray;
+    
+    
+}
+.contenthdct{
+    width: 100%;
+    height: 680px;
+    position: relative;
+}
+#tab1{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 90%;
+    
+}
+#tab2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    
+    
+}
+p{
+    line-height: 34px;
+    font-size: 13px;
+}

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "cửa hàng bán nước hoa",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "cửa hàng bán nước hoa"
+	}
+}

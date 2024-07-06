@@ -1,0 +1,136 @@
+#herder{
+    width: 100%;
+    height: 40px;
+    background-color:#9b0e62;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  
+
+}
+.herder-dau{
+    color: #fff;
+    line-height: 40px;
+    font-size: 60px;
+
+  
+
+}
+#herder-2{
+    width: 100%;
+    height: 130px;
+    background-color: #fff;
+    border: 3px solid #fff;
+    
+}
+#herder-3 {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+
+
+.herderduoi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+    font-size: 20px;
+    color: black;
+  }
+
+  
+  .herderduoi ul li {
+    display: inline-block;
+    margin-right: 30px; /* Cách nhau ít */
+  }
+  
+
+.herder2tren img {
+    /* width="235" 
+    height="120"  */
+    max-width: 235px;
+    margin-left: 12%;
+   
+}
+.ip {
+   width: 27%;
+   height: 36px;
+   border-radius: 4px;
+   transform:translateY(-180%) ;
+   border: 1px solid black;
+   margin-left: 60px;
+   position: relative;
+}
+
+.herder2tren{
+   width: 100%;
+   line-height: 10px;
+   font-size: 20px;
+ 
+}
+.herder2tren {
+    font-size: 20px;
+
+}
+
+
+
+.ipx{
+    width: 15%;
+    height: 36px;
+    border-radius: 4px;
+    transform:translateY(-180%) ;
+    border: 1px solid #b3b3b3;
+    margin-left: 40px;
+    position: relative;
+}
+.herder2tren h2 {
+    margin-left: 80%;
+    transform: translateY(-500%);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.header-content-search input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-content-icon i {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.herderduoi ul li {
+    display: inline-block;
+    margin-right: 20px; /* Cách nhau ít */
+    vertical-align: middle; /* Căn giữa theo chiều dọc */
+    padding-right: 10px; /* Khoảng cách phía bên phải của mỗi mục */
+    border-right: 1px solid #ccc; /* Dấu gạch ngăn cách */
+  }
+  
+  .herderduoi ul li:last-child {
+    border-right: none; /* Loại bỏ dấu gạch ở phần tử cuối cùng */
+  }
+.custom-link:hover{
+    color: aqua;
+}
+  
+.custom-link{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family:'emoji';
+}
+.tk, .ok{
+    font-family: 'Times New Roman', Times, serif;
+}
+.hotline{
+    font-family: 'Times New Roman', Times, serif;
+}
+/* CSS for search button */

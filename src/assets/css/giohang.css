@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root{
+    --main-font: 'Montserrat', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: var(--main-font);
+
+}
+.row{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/*-----------------------header-------------------*/
+
+
+
+/* -----giua----- */
+
+
+
+
+/*----------------------Blogs------------------*/
+
+/* ----------------footer-------- */
+/* .footer{
+    margin-top: 100px;
+    padding: 50px 0 10px;
+    background-color: #e1e1e1e1;
+    padding: 90px;
+
+}
+#thongbao{
+    display: none
+}
+.footer p{
+    color: #7e1010;
+}
+.footer-content-row{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content{
+    justify-content: space-between;
+    
+}
+.footer-content-item h3{
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.footer-content-item p {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+.footer-content-social{
+    text-align: center;
+    padding: 50px 0 20px;
+}
+.footer-content-social i{
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+
+}
+.footer-img{
+    text-align: center;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.footer-img img{
+    width: 150px;
+} */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    min-height: 900px; /* Thay vì height: 1000px */
+}
+
+
+.content-left{
+    width: 42%;
+    padding-bottom: 2%;
+    left: 20px;
+}
+.content-right {
+    width: 55%;
+    background-color: #f2f1e5;
+    min-height: 300px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group-input {
+    display: flex;
+}
+
+.form-group-input-div {
+    display: inline-block;
+}
+
+.content-left-input,
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.thanh_toan label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.thanh-toan img {
+    width: 56px;
+    height: 31px;
+    margin-top: 6px;
+}
+
+.thanh-toan div {
+    width: 70%;
+    margin-top: 5px;
+    float: right;
+}
+
+.content-right-giohang th,
+.content-right-giohang td {
+    padding: 5px;
+}
+
+
+.size {
+    width: 10px;
+}
+
+.xoa,
+.apdung {
+    padding: 7px 20px;
+    border-radius: 4px;
+    background-color: #afa84c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.thanh-toan {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: rgb(170, 175, 76);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+/* thêm */
+.content-right-giohang {
+    width: 100%; /* Đảm bảo bảng mở rộng đầy đủ chiều rộng của container */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+  }
+  
+  .content-right-giohang th,
+  .content-right-giohang td {
+    border: 1px solid #ddd; /* Đặt viền cho các ô */
+    padding: 8px; /* Tạo khoảng cách bên trong các ô */
+    text-align: center; /* Căn giữa nội dung của các ô */
+  }
+  
+  .content-right-giohang th {
+    background-color: #f2f2f2; /* Đặt màu nền cho các ô tiêu đề */
+  }
+  
+  .giam,
+  .tang,
+  .dem {
+    cursor: pointer; /* Biến con trỏ thành pointer khi rê chuột vào */
+  }
+  
+  .xoa {
+    background-color: #f44336; /* Màu nền cho nút xóa */
+    color: white; /* Màu chữ cho nút xóa */
+    border: none; /* Loại bỏ viền cho nút xóa */
+    padding: 8px 16px; /* Kích thước nút xóa */
+    text-align: center; /* Căn giữa nội dung của nút xóa */
+    text-decoration: none; /* Loại bỏ gạch chân cho nút xóa */
+    display: inline-block; /* Hiển thị nút xóa dưới dạng khối */
+    font-size: 16px; /* Cỡ chữ cho nút xóa */
+    margin: 4px 2px; /* Khoảng cách giữa các nút xóa */
+    border-radius: 4px; /* Bo tròn góc cho nút xóa */
+  }
+  
+  .xoa:hover {
+    background-color: #d32f2f; /* Màu nền khi di chuột qua nút xóa */
+  }
+  .sl {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-control {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .giam {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi màu nền */
+  }
+  
+  .tang {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển đổi màu nền */
+  }
+  
+  /* Hiệu ứng hover */
+  .giam:hover, .tang:hover {
+    background-color:aqua; /* Màu nền khi hover */
+  }
+  
+  
+

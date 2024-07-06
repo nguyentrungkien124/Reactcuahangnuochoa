@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="thongtintrang" style="margin-left: 1%; margin-top: 1%; background: rgb(229, 229, 148); ">
+            <a href="../html/index.html" style="color: black; font-weight: bold;">Trang chủ</a>
+            <span style="margin: 0 15px;">></span>
+            <a href="../html/index.html" style="color: rgb(242, 44, 44); font-weight: bold;">Trang quản trị-nhà phân phối</a>
+        </div>
+    </header>
+
+
+    <main>
+        <div>
+            <img src="../image/Screenshot 2023-11-23 234824.png" alt="">
+        </div>
+
+        <div class="header2">
+            <a href="../html/trangchu.html"><img class="logo" src="" alt=""></a>
+
+            <div id="ThemSanPham" style="display: none;">
+               
+                <button id="esc" onclick="exit()">X</button>
+                <hr>
+                <div id="form_dien_SP">
+                    <form action="">
+                        <div id="div_MaSP">
+                            <label for="">Mã nhà phân phối</label>
+                            <div class="Ma_SP">
+                                <input id="maSP" type="text" placeholder="" class="Ma_SP_input" >
+                            </div>
+                        </div>
+
+                        <div class="Ten_SP">
+                            <label for="">Tên nhà phân phối</label>
+                            <div class="Ten_SP">
+                                <input id="tenSP" type="text" placeholder="" class="Ma_SP_input">
+                            </div>
+                        </div>
+                        
+                        <div class="Gia_SP">
+                            <label for="">Email liên hệ</label>
+                            <div class="Gia_SP">
+                                <input id="gia" type="text" placeholder="" class="Gia_SP_input">
+                            </div>
+                        </div>
+                     
+                        <div class="anh" style="margin-bottom: 10px;">
+                            <label for=""> Ảnh</label>
+                            <div class="">
+                                <input  id="anhSP" type="file" class="SLuog_SP_input">
+                               
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <button onclick="Save()" id="Them">Thêm nhà phân phối</button>
+                <button onclick="Sua()" id="Sua">Sửa</button>
+            </div>
+
+        </div>
+
+
+        <div class="content">
+            <div class="content-left">
+
+                <div class="content-menu" style="float: 40%left; ">
+
+                    <ul class="menu-baiviet">
+                        <li>
+                           
+                            <a href=""> <i class="fa-solid fa-house"></i>Thống kê</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-sanpham">
+                        <li>
+                            <i class="fa-solid fa-bars"></i>
+                            <a href="admin.html">Quản lí sản phẩm</a>
+                        </li>
+                        
+                    </ul>
+                    
+                    <ul class="menu-sanpham">
+                        <li>
+                            <i class="fa-solid fa-clipboard"></i>
+                            <a href="admin_nha_phan_phoi.html" >Quản lí nhà phân phối</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-khachhang">
+                        <li>
+                            <i class="fa-brands fa-apple"></i>
+                            <a href="admin_khach_hang.html">Quản lí khách hàng</a>
+                        </li>
+                       
+                    </ul>
+
+                    <ul class="menu-donhang">
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a href="admin_don_hang.html">Quản lí đơn hàng</a>
+                        </li>
+                    
+                    </ul>
+
+                    <ul class="menu-donhang">
+                        <li>
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            <a href="admin_don_nhap.html">Quản lí đơn hàng nhập</a>
+                        </li>
+                    
+                    </ul>
+
+                    <ul class="menu-nhanvien">
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <a href="admin_nhân_viên.html">Quản lí nhân viên</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-right" style="float: 10%right;">
+                <div class="bt-head">
+                    <button id="nutThem" onclick="themSP()" type="button">
+                        Thêm sản phẩm
+                    </button>
+
+
+                    
+                </div>
+                <div class="danhmuc">
+                    <h2 style="background: yellowgreen;">Quản lí nhà phân phối</h3><br>
+                        <hr>
+                        <table class="table-sp" border="1" style="border-collapse: collapse; width: 100%;">
+                            <tr>
+                                <th>Ảnh</th>
+                                <th>Nhà phân phối </th>
+                                <th>Mã nhà phân phối</th>
+                                <th>Email liên hệ</th>
+                                <th colspan="2">Chức năng</th>
+
+
+
+
+
+                            </tr>
+                            <tbody id="danhsachsanpham"></tbody>
+                            <!-- <tr ng-repeat="x in listSanPham">
+                                <td id="anh"><img src="../image/Gucci-Symbol.png" alt=""></td>
+                                <td>GUCCI</td>
+                                <td>K-I-E-N</td>
+                                <td>kiennro38@gmail.com</td>
+                                <td class="sua"><button onclick="btn_Sua(x.maSanPham)">Sửa </button></td>
+                                <td class="xoa"><button onclick="Sanpham_Delete(x.maSanPham)">Xóa</button></td>
+                            </tr> -->
+
+                        </table>
+
+                 
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    <section class="blogs" style="margin-top: 5%;">
+        <div class="container">
+            <h1 class="title_h1"
+                style="text-align: center; padding-bottom: 3px; border-bottom: 6px solid orange; width: 100px; margin: 0 auto; margin-bottom: 5px; border-radius: 2px;">
+                Blogs</h1>
+            <div class="blogs-content">
+                <div class="blogs-content-item">
+                    <img src="../image/blogs1.jpg" alt="">
+                    <a href="">
+                        <h3>Xu hướng nước hoa mới nhất năm 2023 mà bạn không thể bỏ qua </h3>
+                    </a>
+                </div>
+                <div class="blogs-content-item">
+                    <img src="../image/blogs2.jpg" alt="">
+                    <a href="">
+                        <h3>Xu hướng nước hoa mới nhất năm 2023 mà bạn không thể bỏ qua </h3>
+                    </a>
+                </div>
+
+                <div class="blogs-content-item">
+                    <img src="../image/blogs3.jpg" alt="">
+                    <a href="">
+                        <h3>Xu hướng nước hoa mới nhất năm 2023 mà bạn không thể bỏ qua </h3>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-content-row">
+                <div class="footer-content-item">
+                    <h3>GIỚI THIỆU</h3>
+                    <p>Giới thiệu về TGNH</p>
+                    <p>Quan điểm kinh doanh</p>
+                    <p>Bản quyền & Sở hữu</p>
+                </div>
+                <div class="footer-content-item">
+                    <h3>CHÍNH SÁCH CÔNG TY</h3>
+                    <p>Điều khoản sử dụng</p>
+                    <p>Chính sách bảo mật thông tin</p>
+                    <p>Chính sách vận chuyển, giao nhận kiểm hàng</p>
+                    <p>Chính sách bảo hành</p>
+                    <p>Chính sách đổi trả</p>
+                    <p>Nhượng Quyền Thương Hiệu</p>
+                    <p>Trả góp 0% qua thẻ tín dụng</p>
+
+
+                </div>
+                <div class="footer-content-item">
+                    <h3>TRỢ GIÚP</h3>
+                    <p>Hướng dẫn sử dụng nước hoa</p>
+                    <p>Hướng dẫn mua hàng</p>
+                    <p>Phương thức thanh toán</p>
+                    <p>Gói quà miễn phí</p>
+                </div>
+                <div class="footer-content-item">
+                    <h3>THÔNG TIN KHÁC</h3>
+                    <p>Hoạt động TGNH</p>
+                    <p>Member Card</p>
+                    <p>Gift Voucher</p>
+                    <p>Tuyển dụng</p>
+                </div>
+
+            </div>
+            <div class="footer-content-social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="footer-img">
+                <img src="../image/footer-removebg-preview.png" alt="">
+
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/admin_nha_phan_phoi.js"></script>
+
+
+
+
+
+</body>
+
+
+
+</html>

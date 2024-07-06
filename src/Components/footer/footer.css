@@ -1,0 +1,65 @@
+.footer{
+    margin-top: 100px;
+    padding: 50px 0 10px;
+    background-color: gray;
+    padding: 90px;
+}
+
+.footer p{
+    color: #fff;
+}
+
+.footer-content-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content{
+    justify-content: space-between;
+}
+
+.footer-content-item h3{
+    color:#fff;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.footer-content-item p {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.footer-content-social{
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+.footer-content-social i{
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.footer-img{
+    text-align: center;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-img img{
+    width: 150px;
+}
+.footer-content-social {
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+.footer-content-social .fa-icon {
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+    color: blue; /* Màu mới bạn muốn áp dụng */
+}
+
